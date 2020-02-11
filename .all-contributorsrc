@@ -1,0 +1,26 @@
+{
+  "projectName": "gatsby-remark-extract-keywords",
+  "projectOwner": "osiux",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": true,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "osiux",
+      "name": "Eduardo Reveles",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/204463?v=4",
+      "profile": "https://www.osiux.ws/",
+      "contributions": [
+        "code",
+        "doc",
+        "ideas"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7
+}
