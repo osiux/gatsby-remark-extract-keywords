@@ -1,6 +1,9 @@
 # gatsby-remark-extract-keywords
+
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Extract keywords and key-phrases from your content using [retext](https://github.com/retextjs/retext) and [retext-keywords](https://github.com/retextjs/retext-keywords) and use them for SEO or just display them.
@@ -10,10 +13,9 @@ Supports both _MD_ and _MDX_ format.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributors ✨](#contributors-)
+-   [Installation](#installation)
+-   [Usage](#usage)
+-   [Contributors ✨](#contributors-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -78,6 +80,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
