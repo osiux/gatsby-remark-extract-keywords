@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.3...v1.0.4) (2020-02-11)
+
+
+### Bug Fixes
+
+* change prettier config ([777e8cb](https://github.com/osiux/gatsby-remark-extract-keywords/commit/777e8cbba71dd1c5be229bb2cd50a1b3341e2752))
+
 ## [1.0.3](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.2...v1.0.3) (2020-02-11)
 
 
