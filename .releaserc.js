@@ -1,4 +1,5 @@
 module.exports = {
+    branches: ["master"],
     plugins: [
         [
             '@semantic-release/changelog',
