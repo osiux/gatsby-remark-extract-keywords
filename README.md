@@ -7,11 +7,9 @@ Supports both _MD_ and _MDX_ format.
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
--   [Installation](#installation)
--   [Usage](#usage)
--   [How to run tests](#how-to-run-tests)
--   [How to develop locally](#how-to-develop-locally)
--   [How to contribute](#how-to-contribute)
+
+- [Installation](#installation)
+- [Usage](#usage)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
