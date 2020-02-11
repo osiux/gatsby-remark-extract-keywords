@@ -1,3 +1,11 @@
+## [1.0.5](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.4...v1.0.5) (2020-02-11)
+
+
+### Bug Fixes
+
+* change node version to compile before publish ([fb55727](https://github.com/osiux/gatsby-remark-extract-keywords/commit/fb55727968fdcd788c5d702e54a9a8024e152472))
+* change node version to compile before publish ([64a4c0f](https://github.com/osiux/gatsby-remark-extract-keywords/commit/64a4c0f633433e17467b65c3b684a1910f80d5f0))
+
 ## [1.0.4](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.3...v1.0.4) (2020-02-11)
 
 
