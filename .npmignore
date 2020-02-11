@@ -1,0 +1,10 @@
+node_modules
+src
+yarn.lock
+*.log
+.lintstagedrc
+.editorconfig
+.babelrc
+.prettierrc
+.prettierignore
+.eslintrc.js
