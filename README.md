@@ -59,6 +59,4 @@ query ListingQuery {
     }
   }
 }
-
 ```
-
