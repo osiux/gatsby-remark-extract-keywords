@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.2...v1.0.3) (2020-02-11)
+
+
+### Bug Fixes
+
+* update readme and change semantic release order ([fad7cb5](https://github.com/osiux/gatsby-remark-extract-keywords/commit/fad7cb5e62a71d925b04556ef5742040e95a7982))
+
 ## [1.0.2](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.1...v1.0.2) (2020-02-11)
 
 ### Bug Fixes
