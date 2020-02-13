@@ -1,6 +1,6 @@
 # gatsby-remark-extract-keywords
 
-[![](https://img.shields.io/github/workflow/status/osiux/gatsby-remark-extract-keywords/Release)](https://github.com/osiux/gatsby-remark-extract-keywords/actions) [![](https://img.shields.io/bundlephobia/min/gatsby-remark-extract-keywords)](https://bundlephobia.com/result?p=gatsby-remark-extract-keywords) [![MIT License](https://img.shields.io/npm/l/gatsby-remark-extract-keywords)][https://github.com/osiux/gatsby-remark-extract-keywords/blob/master/license]
+[![](https://img.shields.io/github/workflow/status/osiux/gatsby-remark-extract-keywords/Release)](https://github.com/osiux/gatsby-remark-extract-keywords/actions) [![](https://img.shields.io/bundlephobia/min/gatsby-remark-extract-keywords)](https://bundlephobia.com/result?p=gatsby-remark-extract-keywords) [![MIT License](https://img.shields.io/npm/l/gatsby-remark-extract-keywords)](https://github.com/osiux/gatsby-remark-extract-keywords/blob/master/license)
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 
