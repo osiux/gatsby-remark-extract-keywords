@@ -8,23 +8,13 @@ module.exports = {
                 changelogFile: 'CHANGELOG.md',
             },
         ],
-        [
-            '@semantic-release/npm',
-            {
-                tarballDir: 'dist',
-            },
-        ],
+        '@semantic-release/npm',
         [
             '@semantic-release/git',
             {
                 assets: ['CHANGELOG.md', 'package.json'],
             },
         ],
-        [
-            '@semantic-release/github',
-            {
-                assets: 'dist/*.tgz',
-            },
-        ],
+        '@semantic-release/github',
     ],
 };
