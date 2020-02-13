@@ -1,9 +1,22 @@
+/* eslint-disable */
 const retext = require('retext');
 const pos = require('retext-pos');
 const keywords = require('retext-keywords');
 const toString = require('nlcst-to-string');
 
-const getKeywords = text => {
+const blacklistKeywords = (keywords, blacklist) => {
+    if (typeof blacklist === 'function') {
+        return keywords.filter(blacklist);
+    }
+
+    // Make all blacklisted terms lowercase
+    let blacklisted = [...blacklist].map(term => term.toLowerCase());
+
+    // Then compare with actual keywords as lowercase
+    return keywords.filter(term => !blacklisted.includes(term.toLowerCase()));
+};
+
+const getKeywords = ({ text, max, blacklist }) => {
     let textKeywords = [];
     let textKeyphrases = [];
 
@@ -24,10 +37,20 @@ const getKeywords = text => {
             });
         });
 
+    if (blacklist) {
+        textKeywords = blacklistKeywords(textKeywords, blacklist);
+        textKeyphrases = blacklistKeywords(textKeyphrases, blacklist);
+    }
+
+    if (max) {
+        textKeywords = textKeywords.slice(0, max);
+        textKeyphrases = textKeyphrases.slice(0, max);
+    }
+
     return [textKeywords, textKeyphrases];
 };
 
-exports.onCreateNode = ({ node, actions }) => {
+exports.onCreateNode = ({ node, actions }, { max, blacklist } = {}) => {
     const { createNodeField } = actions;
 
     if (
@@ -39,7 +62,11 @@ exports.onCreateNode = ({ node, actions }) => {
                 ? node.rawMarkdownBody
                 : node.rawBody;
 
-        const [keywords, keyphrases] = getKeywords(bodyText);
+        const [keywords, keyphrases] = getKeywords({
+            text: bodyText,
+            max,
+            blacklist,
+        });
 
         createNodeField({
             node,

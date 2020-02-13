@@ -17,6 +17,8 @@ Supports both _MD_ and _MDX_ format.
 
 -   [Installation](#installation)
 -   [Usage](#usage)
+    -   [`blacklist` option as function](#blacklist-option-as-function)
+-   [Options](#options)
 -   [Contributors ✨](#contributors-)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -66,6 +68,37 @@ query ListingQuery {
   }
 }
 ```
+
+### `blacklist` option as function
+
+This will only return keywords with keyword length higher than 5.
+
+```javascript
+const filterKeywords = term => term.length > 5;
+
+plugins: [
+    {
+        resolve: `gatsby-transformer-remark`,
+        options: {
+            plugins: [
+                {
+                    resolve: `gatsby-remark-extract-keywords`,
+                    options: {
+                        blacklist: filterKeywords,
+                    },
+                },
+            ],
+        },
+    },
+];
+```
+
+## Options
+
+| Option      | Description                                                                                                                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `max`       | Maximum number of keywords to return                                                                                                                                                                |
+| `blacklist` | String, array of strings or function to blacklist terms. If function, is used as [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) parameter. |
 
 ## Contributors ✨
 
