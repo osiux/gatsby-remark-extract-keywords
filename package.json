@@ -1,7 +1,7 @@
 {
     "name": "gatsby-remark-extract-keywords",
     "description": "Extract keywords (for SEO, display, etc) on all remark nodes.",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "author": "Eduardo Reveles <me@osiux.ws>",
     "license": "MIT",
     "keywords": [

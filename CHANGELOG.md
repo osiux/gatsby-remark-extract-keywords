@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.1.0...v1.1.1) (2020-02-13)
+
+
+### Bug Fixes
+
+* fix release workflow ([fde8367](https://github.com/osiux/gatsby-remark-extract-keywords/commit/fde8367ae119336c29aa9d68c426f67c989dfffc))
+
 # [1.1.0](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.6...v1.1.0) (2020-02-13)
 
 
