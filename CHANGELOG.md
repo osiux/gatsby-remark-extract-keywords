@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.6...v1.1.0) (2020-02-13)
+
+
+### Features
+
+* add plugin config options ([fa83293](https://github.com/osiux/gatsby-remark-extract-keywords/commit/fa832936f6ce5c09a2ca507aadd0b996706acfdb))
+
 ## [1.0.6](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.5...v1.0.6) (2020-02-13)
 
 
