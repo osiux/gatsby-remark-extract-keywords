@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.5...v1.0.6) (2020-02-13)
+
+
+### Bug Fixes
+
+* **docs:** format badge fix ([d6a6329](https://github.com/osiux/gatsby-remark-extract-keywords/commit/d6a6329a4f36a8a967ac0008a08b7bf5cdaeef98))
+
 ## [1.0.5](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.0.4...v1.0.5) (2020-02-11)
 
 
