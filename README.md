@@ -8,9 +8,18 @@
 
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
-Extract keywords and key-phrases from your content using [retext](https://github.com/retextjs/retext) and [retext-keywords](https://github.com/retextjs/retext-keywords) and use them for SEO or just display them.
+Extract most important keywords from your content using [Natural tf-idf](https://github.com/NaturalNode/natural#tf-idf). From their docs:
 
-Supports both _MD_ and _MDX_ format.
+> Term Frequency–Inverse Document Frequency (tf-idf) is implemented to determine how important a word (or words) is to a document relative to a corpus. The following formulas are used for calculating tf and idf:
+>
+> -   tf(t, d) is a so-called raw count, so just the count of the term in the document
+> -   idf(t, D) uses the following formula: 1 + ln(N / (1 + n\*t)) where N is the number of documents, and n_t the number of documents in which the term appears. The 1 + in the denominator is for handling the possibility that n_t is 0.
+
+In our context, `N` is just 1, your page/post content.
+
+Supports both **MD** and **MDX** format.
+
+## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -48,7 +57,7 @@ plugins: [
 ];
 ```
 
-This creates two new fields on each MD/MDX nodes called `keywords` and `keyphrases`, you can use them on your GraphQL query:
+This creates a new field on each MD/MDX node called `keywords`, you can use it on your GraphQL query:
 
 ```javascript
 query ListingQuery {
@@ -61,7 +70,6 @@ query ListingQuery {
         }
         fields {
           keywords
-          keyphrases
         }
       }
     }

@@ -1,8 +1,5 @@
-/* eslint-disable */
-const retext = require('retext');
-const pos = require('retext-pos');
-const keywords = require('retext-keywords');
-const toString = require('nlcst-to-string');
+const natural = require('natural');
+const TfIdf = natural.TfIdf;
 
 const blacklistKeywords = (keywords, blacklist) => {
     if (typeof blacklist === 'function') {
@@ -18,36 +15,21 @@ const blacklistKeywords = (keywords, blacklist) => {
 
 const getKeywords = ({ text, max, blacklist }) => {
     let textKeywords = [];
-    let textKeyphrases = [];
 
-    retext()
-        .use(pos)
-        .use(keywords)
-        .process(text, (err, file) => {
-            if (err) throw err;
+    const tfidf = new TfIdf();
+    tfidf.addDocument(text);
 
-            file.data.keywords.forEach(kw => {
-                textKeywords.push(toString(kw.matches[0].node));
-            });
-
-            file.data.keyphrases.forEach(phrase => {
-                textKeyphrases.push(
-                    phrase.matches[0].nodes.map(toString).join('')
-                );
-            });
-        });
+    tfidf.listTerms(0).forEach(item => textKeywords.push(item.term));
 
     if (blacklist) {
         textKeywords = blacklistKeywords(textKeywords, blacklist);
-        textKeyphrases = blacklistKeywords(textKeyphrases, blacklist);
     }
 
     if (max) {
         textKeywords = textKeywords.slice(0, max);
-        textKeyphrases = textKeyphrases.slice(0, max);
     }
 
-    return [textKeywords, textKeyphrases];
+    return textKeywords;
 };
 
 exports.onCreateNode = ({ node, actions }, { max, blacklist } = {}) => {
@@ -62,7 +44,7 @@ exports.onCreateNode = ({ node, actions }, { max, blacklist } = {}) => {
                 ? node.rawMarkdownBody
                 : node.rawBody;
 
-        const [keywords, keyphrases] = getKeywords({
+        const keywords = getKeywords({
             text: bodyText,
             max,
             blacklist,
@@ -72,11 +54,6 @@ exports.onCreateNode = ({ node, actions }, { max, blacklist } = {}) => {
             node,
             name: `keywords`,
             value: keywords,
-        });
-        createNodeField({
-            node,
-            name: `keyphrases`,
-            value: keyphrases,
         });
     }
 };
