@@ -1,3 +1,10 @@
+# [2.0.0](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.2.0...v2.0.0) (2020-02-14)
+
+
+### Bug Fixes
+
+* add missing package ([dff059d](https://github.com/osiux/gatsby-remark-extract-keywords/commit/dff059d2beac7668ab8f6e06f82710f29a1b72bb))
+
 # [1.2.0](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.1.1...v1.2.0) (2020-02-14)
 
 
