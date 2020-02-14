@@ -31,10 +31,7 @@
         }
     },
     "dependencies": {
-        "nlcst-to-string": "^2.0.3",
-        "retext": "^7.0.1",
-        "retext-keywords": "^5.0.0",
-        "retext-pos": "^2.0.2"
+        "natural": "^0.6.3"
     },
     "devDependencies": {
         "@semantic-release/changelog": "^5.0.0",
