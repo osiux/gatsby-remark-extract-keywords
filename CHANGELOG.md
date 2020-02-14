@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.1.1...v1.2.0) (2020-02-14)
+
+
+### Features
+
+* change library used to extract keywords ([9d1fbd8](https://github.com/osiux/gatsby-remark-extract-keywords/commit/9d1fbd8b5edc04c40b4781e9abca82e9c6b42247)), closes [#1](https://github.com/osiux/gatsby-remark-extract-keywords/issues/1)
+
 ## [1.1.1](https://github.com/osiux/gatsby-remark-extract-keywords/compare/v1.1.0...v1.1.1) (2020-02-13)
 
 
