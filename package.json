@@ -31,23 +31,23 @@
         }
     },
     "dependencies": {
-        "natural": "^0.6.3"
+        "natural": "^1.0.2"
     },
     "devDependencies": {
-        "@semantic-release/changelog": "^5.0.0",
+        "@semantic-release/changelog": "^5.0.1",
         "@semantic-release/git": "^9.0.0",
-        "@semantic-release/github": "^7.0.3",
-        "all-contributors-cli": "^6.13.0",
+        "@semantic-release/github": "^7.0.5",
+        "all-contributors-cli": "^6.14.2",
         "babel-cli": "^6.26.0",
-        "babel-eslint": "^9.0.0",
+        "babel-eslint": "^10.1.0",
         "babel-preset-env": "^1.7.0",
         "conventional-changelog-conventionalcommits": "^4.2.3",
-        "cross-env": "^5.1.5",
-        "eslint": "^5.3.0",
-        "eslint-config-prettier": "^3.0.1",
-        "husky": "^1.0.0-rc.13",
-        "lint-staged": "^7.2.2",
-        "prettier": "1.14.2"
+        "cross-env": "^7.0.2",
+        "eslint": "^6.8.0",
+        "eslint-config-prettier": "^6.11.0",
+        "husky": "^4.2.5",
+        "lint-staged": "^10.2.0",
+        "prettier": "2.0.5"
     },
     "peerDependencies": {
         "gatsby": "^2.0.0"
